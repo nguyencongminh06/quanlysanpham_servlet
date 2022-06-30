@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ProductController</servlet-name>
+  	<display-name>ProductController</display-name>
+  	<description></description>
+  	<servlet-class>org.tojo.orders.controllers.ProductController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>HomeController</servlet-name>
+  	<display-name>HomeController</display-name>
+  	<description></description>
+  	<servlet-class>org.tojo.orders.controllers.HomeController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>IndexController</servlet-name>
+  	<display-name>IndexController</display-name>
+  	<description></description>
+  	<servlet-class>org.tojo.orders.controllers.products.IndexController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ActionController</servlet-name>
+  	<display-name>ActionController</display-name>
+  	<description></description>
+  	<servlet-class>org.tojo.orders.controllers.products.ActionController</servlet-class>
+  </servlet>
+  <servlet>  	
+  <servlet-name>EditController</servlet-name>
+  	<display-name>EditController</display-name>
+  	<description></description>
+  	<servlet-class>org.tojo.orders.controllers.products.EditController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/products/ProductController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HomeController</servlet-name>
+  	<url-pattern>/home/HomeController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IndexController</servlet-name>
+  	<url-pattern>/products/IndexController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ActionController</servlet-name>
+  	<url-pattern>/products/ActionController</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>EditController</servlet-name>
+  	<url-pattern>/products/EditController</url-pattern>
+  </servlet-mapping>
+</web-app>
